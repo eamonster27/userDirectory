@@ -10,9 +10,7 @@ app.set('view engine', 'mustache');
 app.use(express.static('public'));
 
 app.get('/', function(req, resp){
-
   resp.render('index', {users :data.users})
-
 });
 
 

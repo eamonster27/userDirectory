@@ -13,16 +13,20 @@
 
         <div class="image-container">
           <div class="image">
-            <img src="{{avatar}}" alt="{{name}}">
+            <img class="thumbnail" src="{{avatar}}" alt="{{name}}">
           </div>
         </div>
-        <div class="name"><a href="#">{{name}}<a></div>
-        {{#job}}
-          <div class="job-company">{{job}}, {{company}}</div>
-        {{/job}}
-        {{^job}}
-          <div class="available">Available for Hire</div>
-        {{/job}}
+
+        <div class="text-container">
+          <div class="name"><a href="#">{{name}}<a></div>
+          {{#job}}
+            <div class="job-company"><p>{{job}}, {{company}}</p></div>
+          {{/job}}
+          {{^job}}
+            <div class="available"><p>Available for Hire</p></div>
+          {{/job}}
+        </div>
+
 
       </div>
 
